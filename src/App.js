@@ -76,13 +76,15 @@ const App = () => {
     <input
       onChange={event => setInput('name', event.target.value)}
       style={styles.input}
-      value={formState.name} 
+      value={formState.name}
+      maxlength="50"
       placeholder="Name"
       required
     />
     <input
       onChange={event => setInput('description', event.target.value)}
       style={styles.input}
+      maxlength="150"
       value={formState.description}
       placeholder="Description"
     />
