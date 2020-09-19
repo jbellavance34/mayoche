@@ -1,0 +1,6 @@
+type Choice @model {
+  id: ID!
+  name: String!
+  animal: String!
+  description: String
+}

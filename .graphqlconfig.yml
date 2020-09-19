@@ -1,0 +1,15 @@
+projects:
+  mayocheapi:
+    schemaPath: amplify/backend/api/mayocheapi/build/schema.graphql
+    includes:
+      - src/graphql/**/*.js
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: javascript
+        generatedFileName: ''
+        docsFilePath: src/graphql
+extensions:
+  amplify:
+    version: 3
