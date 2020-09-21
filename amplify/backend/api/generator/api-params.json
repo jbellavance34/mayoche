@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/",
+            "lambdaFunction": "mayochegenerator",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "generator",
+    "apiName": "generator",
+    "functionArns": [
+        {
+            "lambdaFunction": "mayochegenerator"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-mayoche-dev-203632-authRole",
+        "unAuthRoleName": "amplify-mayoche-dev-203632-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "mayochegenerator",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
