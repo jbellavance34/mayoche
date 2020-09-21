@@ -76,7 +76,7 @@ def handler(event, context):
   if result:
     return {
       'statusCode': 200,
-      'body': result
+      'body':json.dumps(result)
     }
   else:
     return {
