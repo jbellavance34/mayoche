@@ -23,7 +23,7 @@ const App = () => {
     try {
       const choiceData = await API.graphql(graphqlOperation(votesByDate, {
         limit: 20,
-        sortDirection: 'ASC',
+        sortDirection: 'DESC',
         type: "vote"
       },
       ))
