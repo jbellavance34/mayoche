@@ -1,5 +1,5 @@
 {
-    "AppSyncApiName": "mayocheapi",
-    "DynamoDBBillingMode": "PAY_PER_REQUEST",
-    "DynamoDBEnableServerSideEncryption": false
+  "AppSyncApiName": "mayocheapi",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false
 }

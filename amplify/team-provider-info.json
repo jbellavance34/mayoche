@@ -1,15 +1,23 @@
 {
-    "dev": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-mayoche-dev-203632-authRole",
-            "UnauthRoleArn": "arn:aws:iam::615519431746:role/amplify-mayoche-dev-203632-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::615519431746:role/amplify-mayoche-dev-203632-authRole",
-            "Region": "ca-central-1",
-            "DeploymentBucketName": "amplify-mayoche-dev-203632-deployment",
-            "UnauthRoleName": "amplify-mayoche-dev-203632-unauthRole",
-            "StackName": "amplify-mayoche-dev-203632",
-            "StackId": "arn:aws:cloudformation:ca-central-1:615519431746:stack/amplify-mayoche-dev-203632/0538ded0-eb22-11ea-aced-0aaf8b31ab7a",
-            "AmplifyAppId": "d17evp2zm4h8y7"
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mayoche-dev-203632-authRole",
+      "UnauthRoleArn": "arn:aws:iam::615519431746:role/amplify-mayoche-dev-203632-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::615519431746:role/amplify-mayoche-dev-203632-authRole",
+      "Region": "ca-central-1",
+      "DeploymentBucketName": "amplify-mayoche-dev-203632-deployment",
+      "UnauthRoleName": "amplify-mayoche-dev-203632-unauthRole",
+      "StackName": "amplify-mayoche-dev-203632",
+      "StackId": "arn:aws:cloudformation:ca-central-1:615519431746:stack/amplify-mayoche-dev-203632/0538ded0-eb22-11ea-aced-0aaf8b31ab7a",
+      "AmplifyAppId": "d17evp2zm4h8y7"
+    },
+    "categories": {
+      "function": {
+        "mayochegenerator": {
+          "deploymentBucketName": "amplify-mayoche-dev-203632-deployment",
+          "s3Key": "amplify-builds/mayochegenerator-582f4d513369596e3339-build.zip"
         }
+      }
     }
+  }
 }
