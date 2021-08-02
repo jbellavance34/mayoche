@@ -1,8 +1,9 @@
 /* src/App.js */
 import React, { useEffect, useState } from 'react'
 import Amplify, { API, graphqlOperation } from 'aws-amplify'
-import { listChoices } from './graphql/queries'
+//import { listChoices } from './graphql/queries'
 import { createChoice } from './graphql/mutations'
+import { votesByDate } from './graphql/queries'
 import awsExports from './aws-exports'
 
 Amplify.configure(awsExports);
@@ -20,11 +21,13 @@ const App = () => {
 
   async function fetchchoices() {
     try {
-      const choiceData = await API.graphql(graphqlOperation(listChoices, {
-        limit: 20
+      const choiceData = await API.graphql(graphqlOperation(votesByDate, {
+        limit: 20,
+        sortDirection: ASC,
+        type: "vote"
       },
       ))
-      const choices = choiceData.data.listChoices.items
+      const choices = choiceData.data.votesByDate.items
       setchoices(choices)
     } catch (err) { console.log(err) }
   }

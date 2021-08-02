@@ -1,4 +1,6 @@
-type Choice @model {
+type Choice @model 
+  @key(name: "votesByDate", fields: ["animal", "createdAt"], queryField: "votesByDate")
+  {
   id: ID!
   name: String!
   animal: String!

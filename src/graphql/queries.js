@@ -32,3 +32,23 @@ export const listChoices = /* GraphQL */ `
     }
   }
 `;
+
+export const votesByDate = /* GraphQL */ `
+  query votesByDate (
+    $filter: ModelChoiceFilterInput
+    $limit: Int
+    $nextToken: String
+    $sortDirection: sortDirection
+  ){
+    votesByDate(sortDirection: $sortDirection, type: "vote") {
+      items {
+        id
+        name
+        animal
+        description
+        createdAt
+        updatedAt
+      }
+    }
+  }
+`;
