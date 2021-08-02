@@ -35,12 +35,10 @@ export const listChoices = /* GraphQL */ `
 
 export const votesByDate = /* GraphQL */ `
   query votesByDate (
-    $filter: ModelChoiceFilterInput
     $limit: Int
-    $nextToken: String
-    $sortDirection: sortDirection
+    $sortDirection: ModelSortDirection
   ){
-    votesByDate(sortDirection: $sortDirection, type: "vote") {
+    votesByDate(sortDirection: $sortDirection, limit: $limit, type: "vote") {
       items {
         id
         name

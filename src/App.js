@@ -8,7 +8,7 @@ import awsExports from './aws-exports'
 
 Amplify.configure(awsExports);
 
-const initialState = { name: '', description: '', animal: 'cat'}
+const initialState = { name: '', description: '', animal: 'cat', type: 'vote'}
 
 const App = () => {
 
@@ -23,7 +23,7 @@ const App = () => {
     try {
       const choiceData = await API.graphql(graphqlOperation(votesByDate, {
         limit: 20,
-        sortDirection: 'DESC',
+        sortDirection: "DESC",
         type: "vote"
       },
       ))
@@ -80,14 +80,14 @@ const App = () => {
       onChange={event => setInput('name', event.target.value)}
       style={styles.input}
       value={formState.name}
-      maxlength="50"
+      maxLength="50"
       placeholder="Name"
       required
     />
     <input
       onChange={event => setInput('description', event.target.value)}
       style={styles.input}
-      maxlength="150"
+      maxLength="150"
       value={formState.description}
       placeholder="Description"
     />

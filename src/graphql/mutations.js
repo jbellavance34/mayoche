@@ -13,6 +13,7 @@ export const createChoice = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      type
     }
   }
 `;
@@ -28,6 +29,7 @@ export const updateChoice = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      type
     }
   }
 `;
@@ -43,6 +45,7 @@ export const deleteChoice = /* GraphQL */ `
       description
       createdAt
       updatedAt
+      type
     }
   }
 `;
