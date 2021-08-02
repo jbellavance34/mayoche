@@ -1,8 +1,10 @@
 type Choice @model 
-  @key(name: "votesByDate", fields: ["animal", "createdAt"], queryField: "votesByDate")
+  @key(name: "votesByDate", fields: ["type", "createdAt"], queryField: "votesByDate")
   {
   id: ID!
   name: String!
   animal: String!
   description: String
+  createdAt: String!
+  type: String!
 }
