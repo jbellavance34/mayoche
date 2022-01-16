@@ -51,7 +51,6 @@ const App = () => {
 
   return (
     <div style={styles.container}>
-
       <h1>Liste des 10 derniers choix</h1>
       <table style={styles.table_td_th}>
         <thead>
@@ -59,24 +58,17 @@ const App = () => {
             <th style={styles.table_td_th}>Nom</th>
             <th style={styles.table_td_th}>Animal</th>
             <th style={styles.table_td_th}>Description</th>
-            <th style={styles.table_td_th}>Date du vote</th>
           </tr>
         </thead>
         {
-          choices.map((choice) => (
+          choices.map((choice) => 
+            (
             <tbody style={styles.table_td_th} >
               {
                 <tr key={choice.id} style={styles.table_td_th} >
                   <td style={styles.table_td_th}>{choice.name}</td>
                   <td style={styles.table_td_th}>{choice.animal}</td>
                   <td style={styles.table_td_th}>{choice.description}</td>
-                  <td style={styles.table_td_th}>
-                    {new Intl.DateTimeFormat("fr-GB", {
-                      year: "numeric",
-                      month: "long",
-                      day: "2-digit"
-                    }).format(new Date(choice.createdAt))}
-                  </td>
 
                 </tr>
               }
